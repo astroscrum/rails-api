@@ -1,11 +1,7 @@
-Team summary for {{date}}:
+Scrum Summary: {{date}}
 {{#each players}}
-*{{real_name}}*
-{{#each categories}}
-  {{category}}:
-  {{#each entries}}
-   - {{body}}
+  *{{name}}*: ({{points}}) pts
+  {{#each categories}}
+    *{{category}}*:{{#each entries}} {{body}}; {{/each}}
   {{/each}}
-{{/each}}
-
 {{/each}}
